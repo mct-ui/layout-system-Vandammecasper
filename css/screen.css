@@ -183,6 +183,62 @@ a:focus {
     margin: 0 auto;
 }
 
+.o-layout {}
+
+.o-layout__item {}
+
+/* gutter modifiers, these affect o-layout__item too */
+
+.o-layout--gutter {}
+
+.o-layout--gutter>.o-layout__item {}
+
+.o-layout--gutter-sm {}
+
+.o-layout--gutter-sm>.o-layout__item {}
+
+.o-layout--gutter-lg {}
+
+.o-layout--gutter-lg>.o-layout__item {}
+
+/* reverse horizontal row modifier */
+
+.o-layout--row-reverse {}
+
+/* Horizontal alignment modifiers*/
+
+.o-layout--justify-start {}
+
+.o-layout--justify-end {}
+
+.o-layout--justify-center {}
+
+.o-layout--justify-space-around {}
+
+.o-layout--justify-space-between {}
+
+/* Vertical item alignment modifiers */
+
+.o-layout--align-start {}
+
+.o-layout--align-end {}
+
+.o-layout--align-center {}
+
+.o-layout--align-baseline {}
+
+/* Vertical content alignment modifiers. Only work if there is one than one flex item */
+
+.o-layout--align-content-start {}
+
+.o-layout--align-content-end {}
+
+.o-layout--align-content-center {}
+
+.o-layout--align-content-space-around {}
+
+.o-layout--align-content-space-between {}
+
 /*
     Object: Object name
     ---
@@ -192,6 +248,19 @@ a:focus {
 /*------------------------------------*\
   #COMPONENTS
 \*------------------------------------*/
+
+.c-layout-block {
+    background-color: LightGrey;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.c-layout-block--ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 
 /*
     Component: Component name
@@ -225,6 +294,242 @@ a:focus {
 
 .u-max-width-sm {
     max-width: 36em;
+}
+
+.u-flex-basis-auto {
+    flex-basis: auto;
+}
+
+.u-flex-grow-1 {
+    flex-grow: 1 !important;
+}
+
+.u-1-of-2 {
+    flex-basis: calc(100%/2) !important;
+}
+
+.u-1-of-3 {
+    flex-basis: calc(100%/3) !important;
+}
+
+.u-2-of-3 {
+    flex-basis: calc((100%/3)*2) !important;
+}
+
+.u-1-of-4 {
+    flex-basis: calc(100%/4) !important;
+}
+
+.u-3-of-4 {
+    flex-basis: calc((100%/4)*3) !important;
+}
+
+.u-1-of-5 {
+    flex-basis: calc(100%/5) !important;
+}
+
+.u-2-of-5 {
+    flex-basis: calc((100%/5)*2) !important;
+}
+
+.u-3-of-5 {
+    flex-basis: calc((100%/5)*3) !important;
+}
+
+.u-4-of-5 {
+    flex-basis: calc((100%/5)*4) !important;
+}
+
+.u-1-of-6 {
+    flex-basis: calc(100%/6) !important;
+}
+
+.u-5-of-6 {
+    flex-basis: calc((100%/6)*5) !important;
+}
+
+@media (min-width: 576px) {
+    .u-1-of-2-bp1 {
+        flex-basis: calc(100%/2) !important;
+    }
+
+    .u-1-of-3-bp1 {
+        flex-basis: calc(100%/3) !important;
+    }
+    
+    .u-2-of-3-bp1 {
+        flex-basis: calc((100%/3)*2) !important;
+    }
+    
+    .u-1-of-4-bp1 {
+        flex-basis: calc(100%/4) !important;
+    }
+    
+    .u-3-of-4-bp1 {
+        flex-basis: calc((100%/4)*3) !important;
+    }
+    
+    .u-1-of-5-bp1 {
+        flex-basis: calc(100%/5) !important;
+    }
+    
+    .u-2-of-5-bp1 {
+        flex-basis: calc((100%/5)*2) !important;
+    }
+    
+    .u-3-of-5-bp1 {
+        flex-basis: calc((100%/5)*3) !important;
+    }
+    
+    .u-4-of-5-bp1 {
+        flex-basis: calc((100%/5)*4) !important;
+    }
+    
+    .u-1-of-6-bp1 {
+        flex-basis: calc(100%/6) !important;
+    }
+    
+    .u-5-of-6-bp1 {
+        flex-basis: calc((100%/6)*5) !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .u-1-of-2-bp2 {
+        flex-basis: calc(100%/2) !important;
+    }
+    
+    .u-1-of-3-bp2 {
+        flex-basis: calc(100%/3) !important;
+    }
+    
+    .u-2-of-3-bp2 {
+        flex-basis: calc((100%/3)*2) !important;
+    }
+    
+    .u-1-of-4-bp2 {
+        flex-basis: calc(100%/4) !important;
+    }
+    
+    .u-3-of-4-bp2 {
+        flex-basis: calc((100%/4)*3) !important;
+    }
+    
+    .u-1-of-5-bp2 {
+        flex-basis: calc(100%/5) !important;
+    }
+    
+    .u-2-of-5-bp2 {
+        flex-basis: calc((100%/5)*2) !important;
+    }
+    
+    .u-3-of-5-bp2 {
+        flex-basis: calc((100%/5)*3) !important;
+    }
+    
+    .u-4-of-5-bp2 {
+        flex-basis: calc((100%/5)*4) !important;
+    }
+    
+    .u-1-of-6-bp2 {
+        flex-basis: calc(100%/6) !important;
+    }
+    
+    .u-5-of-6-bp2 {
+        flex-basis: calc((100%/6)*5) !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .u-1-of-2-bp3 {
+        flex-basis: calc(100%/2) !important;
+    }
+    
+    .u-1-of-3-bp3 {
+        flex-basis: calc(100%/3) !important;
+    }
+    
+    .u-2-of-3-bp3 {
+        flex-basis: calc((100%/3)*2) !important;
+    }
+    
+    .u-1-of-4-bp3 {
+        flex-basis: calc(100%/4) !important;
+    }
+    
+    .u-3-of-4-bp3 {
+        flex-basis: calc((100%/4)*3) !important;
+    }
+    
+    .u-1-of-5-bp3 {
+        flex-basis: calc(100%/5) !important;
+    }
+    
+    .u-2-of-5-bp3 {
+        flex-basis: calc((100%/5)*2) !important;
+    }
+    
+    .u-3-of-5-bp3 {
+        flex-basis: calc((100%/5)*3) !important;
+    }
+    
+    .u-4-of-5-bp3 {
+        flex-basis: calc((100%/5)*4) !important;
+    }
+    
+    .u-1-of-6-bp3 {
+        flex-basis: calc(100%/6) !important;
+    }
+    
+    .u-5-of-6-bp3 {
+        flex-basis: calc((100%/6)*5) !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .u-1-of-2-bp4 {
+        flex-basis: calc(100%/2) !important;
+    }
+    
+    .u-1-of-3-bp4 {
+        flex-basis: calc(100%/3) !important;
+    }
+    
+    .u-2-of-3-bp4 {
+        flex-basis: calc((100%/3)*2) !important;
+    }
+    
+    .u-1-of-4-bp4 {
+        flex-basis: calc(100%/4) !important;
+    }
+    
+    .u-3-of-4-bp4 {
+        flex-basis: calc((100%/4)*3) !important;
+    }
+    
+    .u-1-of-5-bp4 {
+        flex-basis: calc(100%/5) !important;
+    }
+    
+    .u-2-of-5-bp4 {
+        flex-basis: calc((100%/5)*2) !important;
+    }
+    
+    .u-3-of-5-bp4 {
+        flex-basis: calc((100%/5)*3) !important;
+    }
+    
+    .u-4-of-5-bp4 {
+        flex-basis: calc((100%/5)*4) !important;
+    }
+    
+    .u-1-of-6-bp4 {
+        flex-basis: calc(100%/6) !important;
+    }
+    
+    .u-5-of-6-bp4 {
+        flex-basis: calc((100%/6)*5) !important;
+    }
 }
 
 /*
